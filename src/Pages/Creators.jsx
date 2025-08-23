@@ -1,7 +1,7 @@
 
 const Creators = () => {
     return (
-        <div>
+        <div className = 'creators'>
 
         </div>
     )
