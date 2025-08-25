@@ -19,7 +19,10 @@ const Creators = () => {
     return (
         <div className = 'creators'>
             {creators && creators.map(creator => 
-                <Creator />
+                <Creator 
+                    key={creator.id}
+                    creatorInfo={creator}
+                />
             )}
         </div>
     )

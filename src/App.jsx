@@ -3,6 +3,7 @@ import Creators from './Pages/Creators'
 import Menu from './Components/Menu'
 import Add from './Pages/Add'
 import Edit from './Pages/Edit'
+import CreatorDetails from './Pages/CreatorDetails'
 import './App.css'
 
 export default function App() {
@@ -17,10 +18,13 @@ export default function App() {
       element: <Add />
     },
     {
-      path: '/edit',
+      path: '/edit/:id',
       element: <Edit />
+    },
+    {
+      path:'/:id',
+      element: <CreatorDetails />
     }
-
   ])
   
   return (
