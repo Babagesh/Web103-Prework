@@ -1,3 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.App{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+
 .menu{
   display: flex;
   flex-direction: column;
@@ -11,7 +25,8 @@
   font-size: 50px;
   color: white;
   width: 100vw;
-
+  margin: 0;
+  margin-bottom: 5vh;
 }
 
 
@@ -45,5 +60,44 @@
 }
 .creators{
   display: grid;
+
+}
+
+.creator{
+  display: flex;
+  flex-direction: column;
+}
+
+.add{
+  height: 50%;
+  width: 100%;
+}
+
+.add form{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 25%;
+}
+
+.add input{
+  width: 50%;
+}
+
+.add textArea{
+  width: 50%;
+  height: 20%;
+}
+form label{
+  font-size: 2em;
+}
+
+form button{
+  height: 50px;
+  width: 100px;
+  margin-top: 2%;
+}
+
+.creator-details{
   
 }

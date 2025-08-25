@@ -2,6 +2,7 @@ import {useRoutes} from 'react-router-dom'
 import Creators from './Pages/Creators'
 import Menu from './Components/Menu'
 import Add from './Pages/Add'
+import Edit from './Pages/Edit'
 import './App.css'
 
 export default function App() {
@@ -14,6 +15,10 @@ export default function App() {
     {
       path: '/add',
       element: <Add />
+    },
+    {
+      path: '/edit',
+      element: <Edit />
     }
 
   ])
